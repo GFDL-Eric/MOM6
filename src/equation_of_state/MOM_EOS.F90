@@ -50,7 +50,9 @@ public calculate_specific_vol_derivs
 public calculate_TFreeze
 public convert_temp_salt_for_TEOS10
 public cons_temp_to_pot_temp
+public pot_temp_to_cons_temp
 public abs_saln_to_prac_saln
+public prac_saln_to_abs_saln
 public gsw_sp_from_sr
 public gsw_sr_from_sp
 public gsw_pt_from_ct
@@ -179,7 +181,7 @@ character*(12), parameter :: EOS_NEMO_STRING   = "NEMO"   !< A string for specif
 character*(12), parameter :: EOS_ROQUET_RHO_STRING = "ROQUET_RHO"   !< A string for specifying the equation of state
 character*(12), parameter :: EOS_ROQUET_SPV_STRING = "ROQUET_SPV"   !< A string for specifying the equation of state
 character*(12), parameter :: EOS_JACKETT06_STRING = "JACKETT_06" !< A string for specifying the equation of state
-character*(12), parameter :: EOS_DEFAULT = EOS_WRIGHT_STRING !< The default equation of state
+character*(12), parameter :: EOS_DEFAULT = EOS_WRIGHT_FULL_STRING !< The default equation of state
 
 integer, parameter :: TFREEZE_LINEAR = 1  !< A named integer specifying a freezing point expression
 integer, parameter :: TFREEZE_MILLERO = 2 !< A named integer specifying a freezing point expression
